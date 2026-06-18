@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>habibi21</title>
+  <link href="./output.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+<body>
+
+<header class="bg-blue-500 absolute top-0 left-0 w-full flex items-center z-50 shadow-md">
+  <div class="container mx-auto px-4">
+    <div class="flex items-center justify-between relative">
+      <div class="px-4">
+        <a href="#home" class="font-bold text-lg text-white block py-6">Habibi21</a>
+      </div>
+      <div class="flex items-center px-4 relative">
+        <button id="hamburger" name="hamburger" type="button" aria-label="Menu" class="block p-2 rounded-lg hover:bg-blue-600 transition" onclick="document.getElementById('nav-menu').classList.toggle('hidden')">
+          <span class="block w-6 h-0.5 bg-white my-1"></span>
+          <span class="block w-6 h-0.5 bg-white my-1"></span>
+          <span class="block w-6 h-0.5 bg-white my-1"></span>
+        </button>
+
+        <div id="nav-menu" class="hidden absolute top-15 right-0 bg-white rounded-xl shadow-xl border border-gray-100 w-48 py-2 z-100">
+          <a href="#home" aria-label="Home" class="flex items-center gap-2 px-4 py-2 text-sm text-gray-700 hover:bg-blue-50 hover:text-blue-500">
+            <i class="fa-solid fa-house w-4"></i> Home
+          </a>
+          <a href="#about" aria-label="Tentang Saya" class="flex items-center gap-2 px-4 py-2 text-sm text-gray-700 hover:bg-blue-50 hover:text-blue-500 transition">
+            <i class="fa-solid fa-user w-4"></i> Tentang Saya
+          </a>
+          <a href="#portfolio" aria-label="Dokumentasi" class="flex items-center gap-2 px-4 py-2 text-sm text-gray-700 hover:bg-blue-50 hover:text-blue-500 transition">
+            <i class="fa-solid fa-briefcase w-4"></i> Dokumentasi
+          </a>
+          <a href="#experience" aria-label="Pengalaman" class="flex items-center gap-2 px-4 py-2 text-sm text-gray-700 hover:bg-blue-50 hover:text-blue-500 transition">
+            <i class="fa-solid fa-star w-4"></i> Pengalaman
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+</header>
+
+<section id="home" class="pt-24">
+  <div class="container mx-auto px-4">
+    <div class="flex flex-wrap items-center justify-center">
+      <div class="w-full self-center px-4 lg:w-1/2">
+        <h1 class="text-base font-semibold text-blue-500 md:text-xl">Hello Everyone, Kenalin nih Saya 
+          <span class="block font-bold text-slate-950 text-4xl mt-1 lg:text-5xl">Muhammad Maulidan Habibi</span>
+        </h1>
+        <h2 class="font-medium text-slate-600 text-lg mb-5 lg:text-2xl"> Influencer & 
+          <span class="text-black">mahasiswa Sistem Informasi</span>
+        </h2>
+        <p class="font-medium text-slate-600 mb-10 leading-relaxed">
+          Saya aktif di industri media sebagai seorang influencer, Saya juga mahasiswa Sistem Informasi di Universitas Trunodjoyo Madura
+        </p>
+        <a href="https://wa.me/6285189881290" class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">Hubungi Saya</a>
+      </div>
+      <div class="w-full px-4 lg:w-1/2">
+        <div class="relative mt-10 lg:mt-9 flex justify-center pb-10">
+
+          <div class="absolute w-72 h-72 rounded-full border-2 border-dashed border-blue-200 top-0 left-1/2 -translate-x-1/2 -translate-y-4"></div>
+
+          <div class="absolute w-64 h-72 bg-linear-to-br from-blue-100 via-blue-200 to-purple-100 top-2 left-1/2 -translate-x-1/2 blob-shape"></div>
+
+          <div class="absolute top-0 right-4 dot-grid-z">
+            <svg width="70" height="70" viewBox="0 0 70 70">
+              <pattern id="dots" x="0" y="0" width="10" height="10" patternUnits="userSpaceOnUse">
+                <circle cx="2" cy="2" r="1.5" fill="#93c5fd"/>
+              </pattern>
+              <rect width="70" height="70" fill="url(#dots)"/>
+            </svg>
+          </div>
+
+          <div class="relative z-10">
+            <img src="gambar/mmh.png" alt="mmh" class="max-w-full mx-auto relative z-10 photo-hero" />
+          </div>
+
+          <div class="absolute bottom-8 left-0 z-20 flex items-center gap-2 bg-white rounded-xl px-3 py-2 shadow-lg text-sm font-medium">
+            <div class="w-7 h-7 rounded-full bg-blue-100 flex items-center justify-center text-sm">📢</div>
+            <span>Digital Marketing</span>
+          </div>
+
+          <div class="absolute top-4 right-0 z-20 flex items-center gap-2 bg-white rounded-xl px-3 py-2 shadow-lg text-sm font-medium">
+            <div class="w-7 h-7 rounded-full bg-purple-100 flex items-center justify-center text-sm">🎓</div>
+            <span>Sistem Informasi</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="about" class="pt-16 pb-16">
+  <div class="container mx-auto px-4">
+    <div class="flex flex-wrap">
+      <div class="w-full px-4 mb-10">
+        <span class="inline-block text-sm lg:text-base font-semibold text-blue-500 bg-blue-50 border border-blue-200 rounded-full px-4 py-1 mb-3">Tentang Saya</span>
+      </div>
+      <div class="w-full px-4">
+        <div class="flex flex-wrap justify-center gap-6">
+
+          <div class="w-full lg:w-1/4 bg-white dark:bg-gray-800 rounded-lg px-6 py-8 ring shadow-xl ring-gray-900/5">
+            <div>
+              <span class="inline-flex items-center justify-center rounded-md bg-indigo-500 p-2 shadow-lg">
+                <i class="fa-solid fa-book text-white text-xl"></i>
+              </span>
+            </div>
+            <h3 class="text-gray-900 dark:text-white mt-5 text-base font-bold tracking-tight">Mahasiswa Sistem Informasi</h3>
+            <p class="text-gray-500 dark:text-gray-400 mt-2 text-sm">
+              Saya sekarang semester 2 sebagai mahasiswa prodi Sistem Informasi di Universitas Trunodjoyo Madura.
+            </p>
+          </div>
+
+          <div class="w-full lg:w-1/4 bg-white dark:bg-gray-800 rounded-lg px-6 py-8 ring shadow-xl ring-gray-900/5">
+            <div>
+              <span class="inline-flex items-center justify-center rounded-md bg-indigo-500 p-2 shadow-lg">
+                <i class="fa-solid fa-bullhorn text-white text-xl"></i>
+              </span>
+            </div>
+            <h3 class="text-gray-900 dark:text-white mt-5 text-base font-bold tracking-tight">Digital Marketing</h3>
+            <p class="text-gray-500 dark:text-gray-400 mt-2 text-sm">
+              Saya aktif di industri media sebagai seorang digital marketing yang berpengalaman dalam strategi konten dan promosi.
+            </p>
+          </div>
+
+          <div class="w-full lg:w-1/4 bg-white dark:bg-gray-800 rounded-lg px-6 py-8 ring shadow-xl ring-gray-900/5">
+            <div>
+              <span class="inline-flex items-center justify-center rounded-md bg-indigo-500 p-2 shadow-lg">
+                <i class="fa-solid fa-laptop-code text-white text-xl"></i>
+              </span>
+            </div>
+            <h3 class="text-gray-900 dark:text-white mt-5 text-base font-bold tracking-tight">CEO</h3>
+            <p class="text-gray-500 dark:text-gray-400 mt-2 text-sm">
+              Saya tertarik pada dunia teknologi dan terus belajar mengembangkan skill di bidang sistem informasi dan digital.
+            </p>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="portfolio" class="pt-16 pb-16">
+  <div class="container mx-auto px-4">
+    <div class="w-full px-4 mb-10">
+      <span class="inline-block text-sm lg:text-base font-semibold text-blue-500 bg-blue-50 border border-blue-200 rounded-full px-4 py-1 mb-3">Dokumentasi</span>
+    </div>
+
+    <div class="flex justify-end mb-8">
+      <div class="w-full lg:w-2/3 bg-white rounded-2xl shadow-xl overflow-hidden border border-gray-100">
+        <img src="gambar/ikiku1.jpeg" alt="dokumentasi 1" class="w-full h-64 object-cover" />
+        <div class="px-6 py-4">
+          <h3 class="font-bold text-gray-900 text-lg mb-1">Profil Tiktok</h3>
+          <p class="text-gray-500 text-sm leading-relaxed">Saya seorang Nano influencer, profil tiktok saya memiliki 2.018 pengikut dengan 9000 lebih like bisa juga bertambah seiring berjalannya waktu sehingga berpotensi untuk menjadi terkenal di tiktok.</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="flex justify-start">
+      <div class="w-full lg:w-2/3 bg-white rounded-2xl shadow-xl overflow-hidden border border-gray-100">
+        <img src="gambar/ikiku2.png" alt="dokumentasi 2" class="w-full h-64 object-cover" />
+        <div class="px-6 py-4">
+          <h3 class="font-bold text-gray-900 text-lg mb-1">Profil Threads</h3>
+          <p class="text-gray-500 text-sm leading-relaxed">Saya juga seorang Nano influencer di Threads memiliki 2000 lebih pengikut, terdapat 5 brand yang telah bekerja sama dengan saya.</p>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<section id="experience" class="pt-16 pb-16">
+  <div class="container mx-auto px-4">
+    <div class="w-full px-4 mb-10">
+      <span class="inline-block text-sm lg:text-base font-semibold text-blue-500 bg-blue-50 border border-blue-200 rounded-full px-4 py-1 mb-3">Pengalaman</span>
+    </div>
+
+    <div class="relative">
+
+      <div class="absolute left-1/2 -translate-x-1/2 top-0 bottom-0 w-0.5 bg-blue-200 hidden lg:block"></div>
+
+      <div class="flex flex-col lg:flex-row items-center mb-12">
+        <div class="w-full lg:w-1/2 lg:pr-16 lg:text-right mb-4 lg:mb-0">
+          <div class="bg-white rounded-2xl shadow-xl border border-gray-100 px-6 py-6 hover:-translate-y-1 transition">
+            <span class="inline-block text-xs font-semibold text-blue-500 bg-blue-50 border border-blue-200 rounded-full px-3 py-1 mb-3">2024 - Sekarang</span>
+            <h3 class="font-bold text-gray-900 text-lg mb-1">Digital Marketing</h3>
+            <p class="text-blue-500 text-sm font-medium mb-2">PT Vora Media Group</p>
+            <p class="text-gray-500 text-sm leading-relaxed">CO-Founder dari PT Vora Media Group, perusahaan agency live streaming yang menjadi jembatan antara content creator dengan brand serta membantu para content creator untuk berkembang melalui kelas kami.</p>
+          </div>
+        </div>
+        <div class="hidden lg:flex w-10 h-10 rounded-full bg-blue-500 border-4 border-white shadow-lg items-center justify-center z-10 shrink-0">
+          <i class="fa-solid fa-bullhorn text-white text-sm"></i>
+        </div>
+        <div class="w-full lg:w-1/2 lg:pl-16"></div>
+      </div>
+
+      <div class="flex flex-col lg:flex-row items-center mb-12">
+        <div class="w-full lg:w-1/2 lg:pr-16"></div>
+        <div class="hidden lg:flex w-10 h-10 rounded-full bg-indigo-500 border-4 border-white shadow-lg items-center justify-center z-10 shrink-0">
+          <i class="fa-solid fa-book text-white text-sm"></i>
+        </div>
+        <div class="w-full lg:w-1/2 lg:pl-16 mb-4 lg:mb-0">
+          <div class="bg-white rounded-2xl shadow-xl border border-gray-100 px-6 py-6 hover:-translate-y-1 transition">
+            <span class="inline-block text-xs font-semibold text-indigo-500 bg-indigo-50 border border-indigo-200 rounded-full px-3 py-1 mb-3">2025 - Sekarang</span>
+            <h3 class="font-bold text-gray-900 text-lg mb-1">Mahasiswa Sistem Informasi</h3>
+            <p class="text-indigo-500 text-sm font-medium mb-2">Universitas Trunodjoyo Madura</p>
+            <p class="text-gray-500 text-sm leading-relaxed">Menempuh pendidikan S1 Sistem Informasi, mempelajari pengembangan sistem, basis data, dan teknologi informasi.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="flex flex-col lg:flex-row items-center mb-12">
+        <div class="w-full lg:w-1/2 lg:pr-16 lg:text-right mb-4 lg:mb-0">
+          <div class="bg-white rounded-2xl shadow-xl border border-gray-100 px-6 py-6 hover:-translate-y-1 transition">
+            <span class="inline-block text-xs font-semibold text-purple-500 bg-purple-50 border border-purple-200 rounded-full px-3 py-1 mb-3">2026 - Sekarang</span>
+            <h3 class="font-bold text-gray-900 text-lg mb-1">Volunteer KIPK</h3>
+            <p class="text-purple-500 text-sm font-medium mb-2">BIDIKIN</p>
+            <p class="text-gray-500 text-sm leading-relaxed">Membantu proses pendaftaran kipk calon mahasiswa baru dalam proses seleksi kipk dan melakukan sosialisasi kipk di sekolah yang telah di tentukan.</p>
+          </div>
+        </div>
+        <div class="hidden lg:flex w-10 h-10 rounded-full bg-purple-500 border-4 border-white shadow-lg items-center justify-center z-10 shrink-0">
+          <i class="fa-solid fa-laptop-code text-white text-sm"></i>
+        </div>
+        <div class="w-full lg:w-1/2 lg:pl-16"></div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<footer class="bg-blue-500 pt-10 pb-6">
+  <div class="container mx-auto px-4">
+
+    <div class="flex flex-wrap justify-between gap-8 mb-8">
+
+      <div class="w-full lg:w-1/3">
+        <a href="#home" class="font-bold text-2xl text-white block mb-3">Habibi21</a>
+        <p class="text-blue-100 text-sm leading-relaxed">
+          Mahasiswa Sistem Informasi & Influencer yang aktif di industri media.
+        </p>
+        <div class="flex gap-3 mt-4">
+          <a href="#" aria-label="Instagram" class="w-9 h-9 rounded-full bg-blue-400 hover:bg-white hover:text-blue-500 text-white flex items-center justify-center transition">
+            <i class="fa-brands fa-instagram text-sm"></i>
+          </a>
+          <a href="#" aria-label="TikTok" class="w-9 h-9 rounded-full bg-blue-400 hover:bg-white hover:text-blue-500 text-white flex items-center justify-center transition">
+            <i class="fa-brands fa-tiktok text-sm"></i>
+          </a>
+          <a href="#" aria-label="LinkedIn" class="w-9 h-9 rounded-full bg-blue-400 hover:bg-white hover:text-blue-500 text-white flex items-center justify-center transition">
+            <i class="fa-brands fa-linkedin text-sm"></i>
+          </a>
+          <a href="#" aria-label="GitHub" class="w-9 h-9 rounded-full bg-blue-400 hover:bg-white hover:text-blue-500 text-white flex items-center justify-center transition">
+            <i class="fa-brands fa-github text-sm"></i>
+          </a>
+        </div>
+      </div>
+
+      <div class="w-full lg:w-1/4">
+        <h4 class="font-bold text-white text-base mb-4">Navigasi</h4>
+        <ul class="space-y-2">
+          <li><a href="#home" aria-label="Home" class="text-blue-100 hover:text-white text-sm transition flex items-center gap-2"><i class="fa-solid fa-chevron-right text-xs"></i> Home</a></li>
+          <li><a href="#about" aria-label="Tentang Saya" class="text-blue-100 hover:text-white text-sm transition flex items-center gap-2"><i class="fa-solid fa-chevron-right text-xs"></i> Tentang Saya</a></li>
+          <li><a href="#portfolio" aria-label="Dokumentasi" class="text-blue-100 hover:text-white text-sm transition flex items-center gap-2"><i class="fa-solid fa-chevron-right text-xs"></i> Dokumentasi</a></li>
+          <li><a href="#experience" aria-label="Pengalaman" class="text-blue-100 hover:text-white text-sm transition flex items-center gap-2"><i class="fa-solid fa-chevron-right text-xs"></i> Pengalaman</a></li>
+        </ul>
+      </div>
+
+    </div>
+
+    <div class="border-t border-blue-400 pt-4">
+      <p class="text-center text-blue-100 text-sm">
+        &copy; 2026 Habibi21. All rights reserved.
+      </p>
+    </div>
+
+  </div>
+</footer>
+  
+</body>
+</html>
