@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>BzME</title>
+  <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+</head>
+<body class="bg-white font-sans" data-dark="bg-[#111827]">
+
+  <nav class="fixed top-0 left-0 right-0 z-40 flex items-center justify-between px-10 py-4 shadow-sm bg-white" data-dark="bg-[#1f2937]" data-light="bg-white">
+    <div class="flex items-center gap-2">
+      <img src="gambar4/Logo.png" alt="BzMe Logo" class="w-9 h-9">
+      <span class="text-2xl font-bold text-[#8A38F5]" data-dark="text-white">BzMe</span>
+    </div>
+    <ul class="hidden md:flex items-center gap-8 text-base font-medium">
+      <li><a href="#" class="text-[#FF9335]">Home</a></li>
+      <li><a href="#" class="text-[#8A38F5]">About</a></li>
+      <li><a href="#" class="text-[#8A38F5]">Services</a></li>
+      <li><a href="#" class="text-[#8A38F5]">Contact</a></li>
+      <li><a href="#" class="text-[#8A38F5]">Blog</a></li>
+    </ul>
+    <button onclick="gaeireng()" id="themeBtn" class="mr-3 relative w-14 h-7 rounded-full bg-gray-200 focus:outline-none">
+      <span id="thumbIcon" class="absolute top-0.5 left-0.5 w-6 h-6 rounded-full bg-white shadow flex items-center justify-center text-sm transition-transform duration-300">l</span>
+    </button>
+    <button onclick="bukabro()" class="bg-[#FF9335] hover:bg-[#e07d28] text-white font-semibold px-6 py-2.5 rounded-full">Sign Up</button>
+  </nav>
+
+  <div id="gaebukak" class="fixed inset-0 z-50 hidden items-center justify-center bg-black/50">
+    <div class="bg-white rounded-2xl shadow-2xl w-full max-w-md mx-4 p-8 relative">
+      <button onclick="tutupbro()" class="absolute top-4 right-5 text-gray-400 text-3xl font-bold">&times;</button>
+      <h2 class="text-2xl font-bold text-gray-900 mb-1">Create Account</h2>
+      <p class="text-gray-400 text-sm mb-6">Join BzMe and grow your business today.</p>
+
+      <div id="signupForm">
+        <div class="mb-4">
+          <label class="block text-sm font-semibold text-gray-700 mb-1">Full Name</label>
+          <input id="fullname" type="text" placeholder="Enter your full name" class="w-full border border-gray-300 rounded-lg px-4 py-2.5 text-sm focus:outline-none focus:border-[#8A38F5]">
+          <p id="err-fullname" class="text-red-500 text-xs mt-1 hidden">Full name is required.</p>
+        </div>
+        <div class="mb-4">
+          <label class="block text-sm font-semibold text-gray-700 mb-1">Email Address</label>
+          <input id="email" type="text" placeholder="Enter your email" class="w-full border border-gray-300 rounded-lg px-4 py-2.5 text-sm focus:outline-none focus:border-[#8A38F5]">
+          <p id="err-email" class="text-red-500 text-xs mt-1 hidden">Enter a valid email address.</p>
+        </div>
+        <div class="mb-4">
+          <label class="block text-sm font-semibold text-gray-700 mb-1">Password</label>
+          <input id="password" type="password" placeholder="Minimum 8 characters" class="w-full border border-gray-300 rounded-lg px-4 py-2.5 text-sm focus:outline-none focus:border-[#8A38F5]">
+          <p id="err-password" class="text-red-500 text-xs mt-1 hidden">Password min. 8 characters.</p>
+        </div>
+        <div class="mb-6">
+          <label class="block text-sm font-semibold text-gray-700 mb-1">Confirm Password</label>
+          <input id="confirmPassword" type="password" placeholder="Repeat your password" class="w-full border border-gray-300 rounded-lg px-4 py-2.5 text-sm focus:outline-none focus:border-[#8A38F5]">
+          <p id="err-confirmPassword" class="text-red-500 text-xs mt-1 hidden">Passwords do not match.</p>
+        </div>
+        <button onclick="cekform()" class="w-full bg-[#FF9335] hover:bg-[#e07d28] text-white font-semibold py-3 rounded-lg">Sign Up</button>
+        <p class="text-center text-sm text-gray-400 mt-4">Already have an account? <a href="#" class="text-[#8A38F5] font-semibold">Log In</a></p>
+      </div>
+
+    </div>
+  </div>
+
+  <section class="w-full pt-20" data-dark="bg-[#111827]">
+    <div class="flex flex-col md:flex-row items-center justify-between px-10 py-16 max-w-6xl mx-auto">
+      <div class="max-w-lg">
+        <h1 class="text-5xl font-bold text-gray-900 leading-tight" data-dark="text-white">
+          We Create <br>
+          <span class="text-[#8A38F5]">Solutions</span> For <br>
+          Your Business
+        </h1>
+        <p class="mt-5 text-gray-500 text-base leading-relaxed max-w-sm" data-dark="text-gray-400">
+          We provide intelligent technology solutions to optimize efficiency and accelerate the growth of your business operations.
+        </p>
+        <a href="#" class="inline-block mt-8 bg-[#FF9335] hover:bg-[#e07d28] text-white font-semibold px-8 py-3 rounded-full">Get Started</a>
+      </div>
+      <div class="mt-12 md:mt-0">
+        <img src="gambar4/1.png" alt="Business Solutions Illustration" class="w-full max-w-md">
+      </div>
+    </div>
+  </section>
+
+  <section class="py-16 px-10 text-center" data-dark="bg-[#111827]">
+    <h2 class="text-4xl font-bold text-gray-900" data-dark="text-white">We Provide The Best <span class="text-[#8A38F5]">Services</span></h2>
+    <p class="mt-4 text-gray-400 max-w-xl mx-auto">We deliver high-quality technology services specifically designed to enhance your business productivity and scalability in a sustainable way.</p>
+    <div class="grid grid-cols-1 md:grid-cols-4 gap-6 mt-12">
+      <div class="border border-[#8A38F5]/20 rounded-2xl p-6 text-left shadow-sm bg-white" data-dark="bg-[#1f2937] border-[#374151]">
+        <div class="w-14 h-14 rounded-full bg-[#FF9335] flex items-center justify-center mb-4">
+          <img src="gambar4/icon 1.png" alt="icon" class="w-8 h-8">
+        </div>
+        <h3 class="text-lg font-bold text-gray-900 mb-2" data-dark="text-white">Seo/Sem</h3>
+        <p class="text-gray-400 text-sm mb-6">Lorem ipsum dolor sit amet consectetur adipiscing elit. Dolor sit amet consectetur adipiscing elit quisque faucibus.</p>
+        <a href="#" class="bg-[#8A38F5] hover:bg-[#7228d4] text-white text-sm font-semibold px-6 py-2.5 rounded-lg">Click Here</a>
+      </div>
+      <div class="border border-[#8A38F5]/20 rounded-2xl p-6 text-left shadow-sm bg-white" data-dark="bg-[#1f2937] border-[#374151]">
+        <div class="w-14 h-14 rounded-full bg-[#FF9335] flex items-center justify-center mb-4">
+          <img src="gambar4/icon 1.png" alt="icon" class="w-8 h-8">
+        </div>
+        <h3 class="text-lg font-bold text-gray-900 mb-2" data-dark="text-white">Viral Campaign</h3>
+        <p class="text-gray-400 text-sm mb-6">Lorem ipsum dolor sit amet consectetur adipiscing elit. Dolor sit amet consectetur adipiscing elit quisque faucibus.</p>
+        <a href="#" class="bg-[#8A38F5] hover:bg-[#7228d4] text-white text-sm font-semibold px-6 py-2.5 rounded-lg">Click Here</a>
+      </div>
+      <div class="border border-[#8A38F5]/20 rounded-2xl p-6 text-left shadow-sm bg-white" data-dark="bg-[#1f2937] border-[#374151]">
+        <div class="w-14 h-14 rounded-full bg-[#FF9335] flex items-center justify-center mb-4">
+          <img src="gambar4/icon 2.png" alt="icon" class="w-8 h-8">
+        </div>
+        <h3 class="text-lg font-bold text-gray-900 mb-2" data-dark="text-white">Marketing</h3>
+        <p class="text-gray-400 text-sm mb-6">Lorem ipsum dolor sit amet consectetur adipiscing elit. Dolor sit amet consectetur adipiscing elit quisque faucibus.</p>
+        <a href="#" class="bg-[#8A38F5] hover:bg-[#7228d4] text-white text-sm font-semibold px-6 py-2.5 rounded-lg">Click Here</a>
+      </div>
+      <div class="border border-[#8A38F5]/20 rounded-2xl p-6 text-left shadow-sm bg-white" data-dark="bg-[#1f2937] border-[#374151]">
+        <div class="w-14 h-14 rounded-full bg-[#FF9335] flex items-center justify-center mb-4">
+          <img src="gambar4/icon 3.png" alt="icon" class="w-8 h-8">
+        </div>
+        <h3 class="text-lg font-bold text-gray-900 mb-2" data-dark="text-white">Others</h3>
+        <p class="text-gray-400 text-sm mb-6">Lorem ipsum dolor sit amet consectetur adipiscing elit. Dolor sit amet consectetur adipiscing elit quisque faucibus.</p>
+        <a href="#" class="bg-[#8A38F5] hover:bg-[#7228d4] text-white text-sm font-semibold px-6 py-2.5 rounded-lg">Click Here</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="flex flex-col md:flex-row items-center px-10 py-16 gap-10 bg-[#FFD47E]" data-dark="bg-[#1f2937]" data-light="bg-[#FFD47E]">
+    <div class="flex-1">
+      <img src="gambar4/2.png" alt="Simple Solutions" class="w-full max-w-md mx-auto">
+    </div>
+    <div class="flex-1 max-w-lg">
+      <h2 class="text-4xl font-bold text-gray-900 mb-4" data-dark="text-white">Simple <span class="text-[#8A38F5]">Solutions!</span></h2>
+      <p class="text-gray-500 text-base leading-relaxed mb-8" data-dark="text-gray-400">We understand that no two are alike. That's why we take the time to truly understand your unique goals, challenges, and vision.</p>
+      <div class="flex gap-4">
+        <a href="#" class="bg-[#FF9335] hover:bg-[#e07d28] text-white font-semibold px-8 py-3 rounded-lg">Get Started</a>
+        <a href="#" class="border-2 border-[#8A38F5] text-[#8A38F5] font-semibold px-8 py-3 rounded-lg hover:bg-[#8A38F5] hover:text-white">Read More</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="w-full" data-dark="bg-[#111827]">
+    <div class="flex flex-col md:flex-row items-center px-10 py-16 gap-10 max-w-6xl mx-auto">
+      <div class="flex-1 max-w-sm">
+        <h2 class="text-4xl font-bold text-gray-900 mb-4" data-dark="text-white">Our <span class="text-[#8A38F5]">Agency</span></h2>
+        <p class="text-gray-700 text-base leading-relaxed mb-8" data-dark="text-gray-400">We believe in the power of data. Our analytics-driven approach allows us to make informed. Let's turn your data into actionable insights adored Solutions for Your Business</p>
+        <a href="#" class="bg-[#FF9335] hover:bg-[#e07d28] text-white font-semibold px-8 py-3 rounded-lg">Read More</a>
+      </div>
+      <div class="flex-1">
+        <img src="gambar4/3.png" alt="Our Agency" class="w-full max-w-md mx-auto">
+      </div>
+    </div>
+  </section>
+
+  <section class="py-16 px-10 text-center" data-dark="bg-[#111827]">
+    <h2 class="text-4xl font-bold text-gray-900" data-dark="text-white">What <span class="text-[#FF9335]">Clients</span> Say!</h2>
+    <p class="mt-3 text-gray-500">See How Our Digital Marketing Agency Helped Clients Achieve Their Goals</p>
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-6 mt-10 max-w-5xl mx-auto">
+      <div class="border rounded-2xl p-6 text-left shadow-md bg-white" data-dark="bg-[#1f2937] border-[#374151]">
+        <h4 class="font-bold text-[#FF9335]">Johnny Suh</h4>
+        <p class="text-sm text-gray-500 mb-3">Executive CEO</p>
+        <p class="text-sm text-gray-500 mb-4">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas metus urna, vehicula sed purus ut</p>
+        <div class="flex gap-1">
+          <img src="gambar4/Star 2.png" alt="star" class="w-5 h-5">
+          <img src="gambar4/Star 2.png" alt="star" class="w-5 h-5">
+          <img src="gambar4/Star 2.png" alt="star" class="w-5 h-5">
+          <img src="gambar4/Star 1.png" alt="star" class="w-5 h-5">
+          <img src="gambar4/Star 1.png" alt="star" class="w-5 h-5">
+        </div>
+      </div>
+      <div class="border rounded-2xl p-6 text-left shadow-md bg-white" data-dark="bg-[#1f2937] border-[#374151]">
+        <h4 class="font-bold text-[#FF9335]">Nashley Juan</h4>
+        <p class="text-sm text-gray-500 mb-3">Executive CEO</p>
+        <p class="text-sm text-gray-500 mb-4">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas metus urna, vehicula sed purus ut</p>
+        <div class="flex gap-1">
+          <img src="gambar4/Star 2.png" alt="star" class="w-5 h-5">
+          <img src="gambar4/Star 2.png" alt="star" class="w-5 h-5">
+          <img src="gambar4/Star 2.png" alt="star" class="w-5 h-5">
+          <img src="gambar4/Star 2.png" alt="star" class="w-5 h-5">
+          <img src="gambar4/Star 1.png" alt="star" class="w-5 h-5">
+        </div>
+      </div>
+      <div class="border rounded-2xl p-6 text-left shadow-md bg-white" data-dark="bg-[#1f2937] border-[#374151]">
+        <h4 class="font-bold text-[#FF9335]">Mark Z.</h4>
+        <p class="text-sm text-gray-500 mb-3">Executive CEO</p>
+        <p class="text-sm text-gray-500 mb-4">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas metus urna, vehicula sed purus ut</p>
+        <div class="flex gap-1">
+          <img src="gambar4/Star 2.png" alt="star" class="w-5 h-5">
+          <img src="gambar4/Star 2.png" alt="star" class="w-5 h-5">
+          <img src="gambar4/Star 2.png" alt="star" class="w-5 h-5">
+          <img src="gambar4/Star 2.png" alt="star" class="w-5 h-5">
+          <img src="gambar4/Star 2.png" alt="star" class="w-5 h-5">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer class="bg-[#FFD47E] px-10 pb-10 pt-16 relative" data-dark="bg-[#1f2937]" data-light="bg-[#FFD47E]">
+    <div class="absolute -top-7 left-0 right-0 px-10">
+      <div class="bg-[#FF9335] rounded-2xl flex items-center justify-between px-10 py-5 max-w-5xl mx-auto">
+        <p class="text-white font-semibold text-lg">Ready To Get Started?</p>
+        <a href="#" class="border-2 border-white text-white font-semibold px-6 py-2 rounded-lg hover:bg-white hover:text-[#FF9335]">Contact Us</a>
+      </div>
+    </div>
+    <div class="max-w-3xl mx-auto flex flex-row items-center justify-center gap-16">
+      <div class="flex items-center gap-2 self-center mt-6">
+        <img src="gambar4/Logo.png" alt="BzMe Logo" class="w-9 h-9">
+        <span class="text-2xl font-bold text-[#8A38F5]">BzMe</span>
+      </div>
+      <div class="flex gap-16 justify-center">
+        <div>
+          <h5 class="font-semibold text-gray-800 mb-3">Company</h5>
+          <ul class="text-sm text-gray-700 space-y-2">
+            <li><a href="#">About</a></li>
+            <li><a href="#">Contact</a></li>
+            <li><a href="#">Careers</a></li>
+            <li><a href="#">Team</a></li>
+          </ul>
+        </div>
+        <div>
+          <h5 class="font-semibold text-gray-800 mb-3">Designs</h5>
+          <ul class="text-sm text-gray-700 space-y-2">
+            <li><a href="#">Find a Designer</a></li>
+            <li><a href="#">Discover Inspiration</a></li>
+            <li><a href="#">Pricing</a></li>
+          </ul>
+        </div>
+        <div>
+          <h5 class="font-semibold text-gray-800 mb-3">Support</h5>
+          <ul class="text-sm text-gray-700 space-y-2">
+            <li><a href="#">Privacy Police</a></li>
+            <li><a href="#">Terms</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+<script>
+let ikihitam = false;
+
+function gaeireng() {
+  ikihitam = !ikihitam;
+  document.getElementById('thumbIcon').style.transform = ikihitam ? 'translateX(28px)' : 'translateX(0)';
+
+  document.getElementById('themeBtn').classList.toggle('bg-gray-200', !ikihitam);
+  document.getElementById('themeBtn').classList.toggle('bg-[#8A38F5]', ikihitam);
+  document.querySelectorAll('[data-dark]').forEach(el => {
+    el.dataset.dark.split(' ').forEach(cls => el.classList.toggle(cls, ikihitam));
+    if (el.dataset.light) el.dataset.light.split(' ').forEach(cls => el.classList.toggle(cls, !ikihitam));
+  });
+}
+
+function bukabro() {
+  document.getElementById('gaebukak').classList.replace('hidden', 'flex');
+}
+
+function tutupbro() {
+  document.getElementById('gaebukak').classList.replace('flex', 'hidden');
+}
+
+function cekform() {
+  var name    = document.getElementById('fullname').value.trim();
+  var email   = document.getElementById('email').value.trim();
+  var pass    = document.getElementById('password').value;
+  var confirm = document.getElementById('confirmPassword').value;
+  var valid   = true;
+
+  document.getElementById('err-fullname').classList.toggle('hidden', name !== '');
+  if (name === '') valid = false;
+
+  var emailOk = email !== '' && email.includes('@') && email.includes('.');
+  document.getElementById('err-email').classList.toggle('hidden', emailOk);
+  if (!emailOk) valid = false;
+
+  document.getElementById('err-password').classList.toggle('hidden', pass.length >= 8);
+  if (pass.length < 8) valid = false;
+
+  document.getElementById('err-confirmPassword').classList.toggle('hidden', confirm === pass);
+  if (confirm !== pass) valid = false;
+
+  if (valid) {
+    alert('Akun berhasil dibuat!');
+    tutupbro();
+  }
+}
+</script>
+</body>
+</html>
